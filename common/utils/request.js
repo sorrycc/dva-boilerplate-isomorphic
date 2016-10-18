@@ -16,7 +16,7 @@ function checkStatus(response) {
 }
 
 export default function request(url, options) {
-  return fetch(`http://localhost:4000${url}`, options)
+  return fetch(`http://localhost:8080${url}`, options)
     .then(checkStatus)
     .then(parseJSON)
     .then((data) => ({ data }))

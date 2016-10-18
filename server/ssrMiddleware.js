@@ -51,9 +51,10 @@ export default function(req, res) {
 function renderFullPage(html, initialState) {
   return `
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/static/index.css" />
 </head>
 <body>
   <div id="root">
