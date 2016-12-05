@@ -6,7 +6,7 @@
   "dependencies": {
     "babel-register": "^6.16.3",
     "css-modules-require-hook": "^4.0.5",
-    "dva": "^1.1.0",
+    "dva": "1.2.0-beta1",
     "express": "^4.14.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"

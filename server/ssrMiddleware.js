@@ -26,16 +26,16 @@ export default function(req, res) {
               const app = createApp({
                 history: createMemoryHistory(),
                 initialState,
-              });
-              const html = renderToString(app.start()());
+              }, /* isServer */true);
+              const html = renderToString(app.start()({ renderProps }));
               res.end(renderFullPage(html, initialState));
             });
           break;
         case '/about':
           const app = createApp({
             history: createMemoryHistory(),
-          });
-          const html = renderToString(app.start()());
+          }, /* isServer */true);
+          const html = renderToString(app.start()({ renderProps }));
           res.end(renderFullPage(html, {}));
           break;
         default:
